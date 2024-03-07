@@ -44,11 +44,6 @@ func Run() {
 
 }
 
-// LoadThread Load All Needed Thread
-func LoadThread() {
-
-}
-
 // CreateAccessFile create accesslog file
 func CreateAccessFile(mypath, format string) *dailyrotate.File {
 
