@@ -1,0 +1,16 @@
+{
+    "DBUsername"        :"",
+    "DBPassword"        :"",
+    "Replica"           :"",
+    "DBName"            :"finance",
+    "DBHost1"           :"127.0.0.1",
+    "DBPort1"           :27017,
+    "DBHost2"           :"127.0.0.1",
+    "DBPort2"           :27017,
+    "DBDriver"          :"mongodb",
+    "ListenerPort"      :"5070",
+    "Cumulative"        :1,
+    "WeeklyExportDay"   :"Sunday",
+    "JWTSecret"         :"wellcom to finance"
+
+}

@@ -1,0 +1,299 @@
+2024/03/06 16:52:01 loading config file
+2024/03/06 16:52:01 Conecting to DB
+2024/03/06 16:52:01 Connected to DB
+2024/03/06 16:52:05 Validating Input Form of addUser
+2024/03/06 16:52:15 Validating Input Form of addUser
+2024/03/06 16:52:15 Validating Input Form of addUser Done
+2024/03/06 16:52:15 user insertion failed
+2024/03/06 16:52:15 Error in Adding User : bulk write exception: write errors: [Document can't have $ prefixed field names: $set]
+2024/03/06 16:55:43 loading config file
+2024/03/06 16:55:43 Conecting to DB
+2024/03/06 16:55:43 Connected to DB
+2024/03/06 16:55:51 Validating Input Form of addUser
+2024/03/06 16:55:51 Validating Input Form of addUser Done
+2024/03/06 16:59:25 loading config file
+2024/03/06 16:59:25 Conecting to DB
+2024/03/06 16:59:25 Connected to DB
+2024/03/06 17:00:20 loading config file
+2024/03/06 17:00:20 Conecting to DB
+2024/03/06 17:00:20 Connected to DB
+2024/03/06 17:00:35 Validating Input Form of addUser
+2024/03/06 17:06:20 loading config file
+2024/03/06 17:06:20 Conecting to DB
+2024/03/06 17:06:20 Connected to DB
+2024/03/07 11:22:57 loading config file
+2024/03/07 11:22:57 Conecting to DB
+2024/03/07 11:22:58 Connected to DB
+2024/03/07 11:26:26 Validating Input Form of addUser
+2024/03/07 11:26:26 Validating Input Form of addUser Done
+2024/03/07 11:28:21 Binding Input Form ...
+2024/03/07 11:28:21 farnam@gmail.om Loging in
+2024/03/07 11:28:21 Error in Loading User with Email : farnam@gmail.om , Error : User not Found
+2024/03/07 11:28:27 Binding Input Form ...
+2024/03/07 11:28:27 farnam@gmail.com Loging in
+2024/03/07 11:28:27 Updating User with email : farnam@gmail.com
+2024/03/07 11:28:27 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 11:28:27 farnam@gmail.com Loged in
+2024/03/07 11:53:10 loading config file
+2024/03/07 11:53:10 Conecting to DB
+2024/03/07 11:53:10 Connected to DB
+2024/03/07 11:53:37 Token is Nil
+2024/03/07 11:53:37 Error in Checking Token in Add Reward Token is Nil
+2024/03/07 11:55:08 loading config file
+2024/03/07 11:55:08 Conecting to DB
+2024/03/07 11:55:08 Connected to DB
+2024/03/07 11:55:57 loading config file
+2024/03/07 11:55:57 Conecting to DB
+2024/03/07 11:55:57 Connected to DB
+2024/03/07 11:57:54 loading config file
+2024/03/07 11:57:54 Conecting to DB
+2024/03/07 11:57:54 Connected to DB
+2024/03/07 12:01:10 loading config file
+2024/03/07 12:01:10 Conecting to DB
+2024/03/07 12:01:10 Connected to DB
+2024/03/07 12:01:12 aaaaaaaaaaaaaaaaa <nil>
+2024/03/07 12:02:54 loading config file
+2024/03/07 12:02:54 Conecting to DB
+2024/03/07 12:02:54 Connected to DB
+2024/03/07 12:02:56 aaaaaaaaaaaaaaaaa 65e9732a924789ee3d372488
+2024/03/07 12:02:56 Error in Loading User with Email : 65e9732a924789ee3d372488 , Error : User not Found
+2024/03/07 12:02:56 Error in Adding Account : User not Found
+2024/03/07 12:04:11 loading config file
+2024/03/07 12:04:11 Conecting to DB
+2024/03/07 12:04:11 Connected to DB
+2024/03/07 12:04:13 Binding Input Form ...
+2024/03/07 12:04:13 bbbbbbbb farnam@gmail.com
+2024/03/07 12:04:13 farnam@gmail.com Loging in
+2024/03/07 12:04:13 Updating User with email : farnam@gmail.com
+2024/03/07 12:04:13 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:04:13 farnam@gmail.com Loged in
+2024/03/07 12:04:44 loading config file
+2024/03/07 12:04:44 Conecting to DB
+2024/03/07 12:04:44 Connected to DB
+2024/03/07 12:04:46 Binding Input Form ...
+2024/03/07 12:04:46 bbbbbbbb farnam@gmail.com
+2024/03/07 12:04:46 farnam@gmail.com Loging in
+2024/03/07 12:04:46 Updating User with email : farnam@gmail.com
+2024/03/07 12:04:46 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:04:46 farnam@gmail.com Loged in
+2024/03/07 12:06:22 loading config file
+2024/03/07 12:06:22 Conecting to DB
+2024/03/07 12:06:22 Connected to DB
+2024/03/07 12:06:25 Binding Input Form ...
+2024/03/07 12:06:25 farnam@gmail.com Loging in
+2024/03/07 12:06:25 Updating User with email : farnam@gmail.com
+2024/03/07 12:06:25 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:06:25 farnam@gmail.com Loged in
+2024/03/07 12:06:32 Updating User with email : farnam@gmail.com
+2024/03/07 12:06:32 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:27:34 loading config file
+2024/03/07 12:27:34 Conecting to DB
+2024/03/07 12:27:34 Connected to DB
+2024/03/07 12:27:45 Token is Nil
+2024/03/07 12:27:45 Error in Checking Token in Add Reward Token is Nil
+2024/03/07 12:27:58 Updating User with email : farnam@gmail.com
+2024/03/07 12:27:58 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:28:39 Error in Binding Input Form of addExpense :  code=400, message=parsing time "" as "2006-01-02T15:04:05Z07:00": cannot parse "" as "2006", internal=parsing time "" as "2006-01-02T15:04:05Z07:00": cannot parse "" as "2006"
+2024/03/07 12:29:16 Error in Binding Input Form of addExpense :  code=400, message=Unmarshal type error: expected=int, got=string, field=amount, offset=82, internal=json: cannot unmarshal string into Go struct field Expense.amount of type int
+2024/03/07 12:29:35 Token is Nil
+2024/03/07 12:29:35 Error in Checking Token in Add Reward Token is Nil
+2024/03/07 12:29:47 Updating User with email : farnam@gmail.com
+2024/03/07 12:29:47 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:01 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:01 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:03 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:03 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:03 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:03 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:15 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:15 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:22 you reached your cap amount for budget : kharid
+2024/03/07 12:30:22 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:22 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:27 you reached your cap amount for budget : kharid
+2024/03/07 12:30:27 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:27 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:28 you reached your cap amount for budget : kharid
+2024/03/07 12:30:28 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:28 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:29 you reached your cap amount for budget : kharid
+2024/03/07 12:30:29 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:29 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:35 you reached your cap amount for budget : kharid
+2024/03/07 12:30:35 Updating User with email : farnam@gmail.com
+2024/03/07 12:30:35 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 12:30:43 you reached your cap amount for budget : kharid
+2024/03/07 12:33:29 loading config file
+2024/03/07 12:33:29 Conecting to DB
+2024/03/07 12:33:29 Connected to DB
+2024/03/07 12:33:31 you reached your cap amount for budget : kharid
+2024/03/07 12:33:31 Account limit reached with name : sepah
+2024/03/07 12:33:31 Error in Adding Expense : account limit reached with name
+2024/03/07 12:33:37 you reached your cap amount for budget : kharid
+2024/03/07 12:33:37 Account limit reached with name : sepah
+2024/03/07 12:33:37 Error in Adding Expense : account limit reached with name
+2024/03/07 12:35:55 loading config file
+2024/03/07 12:35:55 Conecting to DB
+2024/03/07 12:35:55 Connected to DB
+2024/03/07 12:35:57 you reached your cap amount for budget : kharid
+2024/03/07 12:35:57 Account limit reached with name : sepah
+2024/03/07 12:35:57 Error in Adding Expense : account limit reached with name
+2024/03/07 12:36:04 you reached your cap amount for budget : kharid
+2024/03/07 12:36:04 Account limit reached with name : sepah
+2024/03/07 12:36:04 Error in Adding Expense : account limit reached with name
+2024/03/07 12:36:22 loading config file
+2024/03/07 12:36:22 Conecting to DB
+2024/03/07 12:36:22 Connected to DB
+2024/03/07 12:36:23 you reached your cap amount for budget : kharid
+2024/03/07 12:36:23 Account limit reached with name : sepah
+2024/03/07 12:36:23 Error in Adding Expense : account limit reached with name
+2024/03/07 12:37:48 loading config file
+2024/03/07 12:37:48 Conecting to DB
+2024/03/07 12:37:48 Connected to DB
+2024/03/07 12:37:50 you reached your cap amount for budget : kharid
+2024/03/07 12:37:50 Account limit reached with name : sepah
+2024/03/07 12:37:50 Error in Adding Expense : account limit reached
+2024/03/07 12:38:00 loading config file
+2024/03/07 12:38:00 Conecting to DB
+2024/03/07 12:38:00 Connected to DB
+2024/03/07 12:38:02 you reached your cap amount for budget : kharid
+2024/03/07 12:38:02 Account limit reached with name : sepah
+2024/03/07 12:38:02 Error in Adding Expense : account limit reached
+2024/03/07 12:38:03 you reached your cap amount for budget : kharid
+2024/03/07 12:38:03 Account limit reached with name : sepah
+2024/03/07 12:38:03 Error in Adding Expense : account limit reached
+2024/03/07 12:40:18 loading config file
+2024/03/07 12:40:18 Conecting to DB
+2024/03/07 12:40:18 Connected to DB
+2024/03/07 12:40:29 you reached your cap amount for budget : kharid
+2024/03/07 12:40:29 Account limit reached with name : sepah
+2024/03/07 12:40:29 Error in Adding Expense : account limit reached
+2024/03/07 12:41:38 loading config file
+2024/03/07 12:41:38 Conecting to DB
+2024/03/07 12:41:38 Connected to DB
+2024/03/07 12:41:41 you reached your cap amount for budget : kharid
+2024/03/07 12:41:41 Account limit reached with name : sepah
+2024/03/07 12:41:41 Error in Adding Expense : account limit reached
+2024/03/07 12:52:41 loading config file
+2024/03/07 12:52:41 Conecting to DB
+2024/03/07 12:52:41 Connected to DB
+2024/03/07 12:53:16 loading config file
+2024/03/07 12:53:16 Conecting to DB
+2024/03/07 12:53:16 Connected to DB
+2024/03/07 12:53:18 Binding Input Form ...
+2024/03/07 12:53:18 Error in Binding Input Form in Login : code=400, message=Unmarshal type error: expected=string, got=number, field=, offset=39, internal=json: cannot unmarshal number into Go value of type string
+2024/03/07 12:54:03 loading config file
+2024/03/07 12:54:03 Conecting to DB
+2024/03/07 12:54:03 Connected to DB
+2024/03/07 12:54:06 Binding Input Form ...
+2024/03/07 12:54:06 Error in Binding Input Form in Login : code=400, message=Unmarshal type error: expected=string, got=number, field=, offset=39, internal=json: cannot unmarshal number into Go value of type string
+2024/03/07 12:54:42 loading config file
+2024/03/07 12:54:42 Conecting to DB
+2024/03/07 12:54:42 Connected to DB
+2024/03/07 12:57:15 loading config file
+2024/03/07 12:57:15 Conecting to DB
+2024/03/07 12:57:15 Connected to DB
+2024/03/07 12:57:58 loading config file
+2024/03/07 12:57:58 Conecting to DB
+2024/03/07 12:57:58 Connected to DB
+2024/03/07 13:03:14 loading config file
+2024/03/07 13:03:14 Conecting to DB
+2024/03/07 13:03:14 Connected to DB
+2024/03/07 13:04:31 loading config file
+2024/03/07 13:04:31 Conecting to DB
+2024/03/07 13:04:31 Connected to DB
+2024/03/07 13:05:47 loading config file
+2024/03/07 13:05:47 Conecting to DB
+2024/03/07 13:05:47 Connected to DB
+2024/03/07 13:05:55 Validating Input Form of addUser
+2024/03/07 13:05:55 Validating Input Form of addUser Done
+2024/03/07 13:06:01 Binding Input Form ...
+2024/03/07 13:06:01 farnam@gmail.com Loging in
+2024/03/07 13:06:01 Updating User with email : farnam@gmail.com
+2024/03/07 13:06:01 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:06:01 farnam@gmail.com Loged in
+2024/03/07 13:06:10 Updating User with email : farnam@gmail.com
+2024/03/07 13:06:10 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:06:13 Error in Adding Budget : this budget already exist
+2024/03/07 13:06:40 loading config file
+2024/03/07 13:06:40 Conecting to DB
+2024/03/07 13:06:40 Connected to DB
+2024/03/07 13:06:42 Error in Adding Budget : this budget already exist
+2024/03/07 13:12:13 loading config file
+2024/03/07 13:12:13 Conecting to DB
+2024/03/07 13:12:13 Connected to DB
+2024/03/07 13:12:15 Updating User with email : farnam@gmail.com
+2024/03/07 13:12:15 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:12:37 Updating User with email : farnam@gmail.com
+2024/03/07 13:12:37 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:21:16 loading config file
+2024/03/07 13:21:16 Conecting to DB
+2024/03/07 13:21:16 Connected to DB
+2024/03/07 13:21:36 Binding Input Form ...
+2024/03/07 13:21:36 Error in Binding Input Form in expense history : code=400, message=Unmarshal type error: expected=int64, got=string, field=, offset=19, internal=json: cannot unmarshal string into Go value of type int64
+2024/03/07 13:22:26 Binding Input Form ...
+2024/03/07 13:22:33 Binding Input Form ...
+2024/03/07 13:22:33 Error in Binding Input Form in expense history : code=400, message=Unmarshal type error: expected=int64, got=number 44444444444444444444444444444444444, field=, offset=58, internal=json: cannot unmarshal number 44444444444444444444444444444444444 into Go value of type int64
+2024/03/07 13:22:57 Binding Input Form ...
+2024/03/07 13:23:10 Binding Input Form ...
+2024/03/07 13:23:20 Binding Input Form ...
+2024/03/07 13:23:34 Binding Input Form ...
+2024/03/07 13:23:46 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:46 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:47 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:47 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:48 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:48 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:48 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:48 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:49 you reached your cap amount for budget : kharid
+2024/03/07 13:23:49 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:49 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:49 you reached your cap amount for budget : kharid
+2024/03/07 13:23:49 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:49 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:50 you reached your cap amount for budget : kharid
+2024/03/07 13:23:50 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:50 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:51 you reached your cap amount for budget : kharid
+2024/03/07 13:23:51 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:51 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:51 you reached your cap amount for budget : kharid
+2024/03/07 13:23:51 Updating User with email : farnam@gmail.com
+2024/03/07 13:23:51 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:23:52 you reached your cap amount for budget : kharid
+2024/03/07 13:23:52 Account limit reached with name : sepah
+2024/03/07 13:23:52 Error in Adding Expense : account limit reached
+2024/03/07 13:23:53 you reached your cap amount for budget : kharid
+2024/03/07 13:23:53 Account limit reached with name : sepah
+2024/03/07 13:23:53 Error in Adding Expense : account limit reached
+2024/03/07 13:23:53 you reached your cap amount for budget : kharid
+2024/03/07 13:23:53 Account limit reached with name : sepah
+2024/03/07 13:23:53 Error in Adding Expense : account limit reached
+2024/03/07 13:23:54 you reached your cap amount for budget : kharid
+2024/03/07 13:23:54 Account limit reached with name : sepah
+2024/03/07 13:23:54 Error in Adding Expense : account limit reached
+2024/03/07 13:23:58 Error in Adding Budget : this budget already exist
+2024/03/07 13:24:00 Updating User with email : farnam@gmail.com
+2024/03/07 13:24:00 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:24:06 Updating User with email : farnam@gmail.com
+2024/03/07 13:24:06 Updating User with email : farnam@gmail.com in Update Func
+2024/03/07 13:25:33 loading config file
+2024/03/07 13:25:33 Conecting to DB
+2024/03/07 13:25:33 Connected to DB
+2024/03/07 13:25:36 Error in Adding Account : this account already exist
+2024/03/07 13:26:29 loading config file
+2024/03/07 13:26:29 Conecting to DB
+2024/03/07 13:26:29 Connected to DB
+2024/03/07 13:26:33 Error in Adding Account : this account already exist
+2024/03/07 13:26:39 loading config file
+2024/03/07 13:26:39 Conecting to DB
+2024/03/07 13:26:39 Connected to DB
+2024/03/07 13:26:59 loading config file
+2024/03/07 13:26:59 Conecting to DB
+2024/03/07 13:26:59 Connected to DB
+2024/03/07 13:27:00 Error in Adding Account : this account already exist
+2024/03/07 13:27:50 loading config file
+2024/03/07 13:27:50 Conecting to DB
+2024/03/07 13:27:50 Connected to DB
+2024/03/07 13:27:53 Error in Adding Account : this account already exist
