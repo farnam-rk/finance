@@ -76,8 +76,10 @@ func checkStatus(expense internal.Expense, u internal.User) (string, int, error)
 
 func budgetCheck(expense internal.Expense, u internal.User) (int, error) {
 
-	var validBudget int
-	var validBudgetExist bool
+	var (
+		validBudget      int
+		validBudgetExist bool
+	)
 
 	for i, j := range u.Budget {
 		if j.Name == expense.Budget {
@@ -93,8 +95,10 @@ func budgetCheck(expense internal.Expense, u internal.User) (int, error) {
 
 func expenseCheck(expense internal.Expense, u internal.User, validBudget int) (string, error) {
 
-	var spend int
-	var warning string
+	var (
+		spend   int
+		warning string
+	)
 
 	for _, n := range u.Expense {
 		if expense.Budget == n.Budget {
@@ -110,8 +114,10 @@ func expenseCheck(expense internal.Expense, u internal.User, validBudget int) (s
 
 func accountCheck(expense internal.Expense, u internal.User) (int, error) {
 
-	var validAccount int
-	var validAccountExit bool
+	var (
+		validAccount     int
+		validAccountExit bool
+	)
 
 	for p, q := range u.Account {
 		if q.Name == expense.UsedAccount {
