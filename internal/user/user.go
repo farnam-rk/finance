@@ -3,7 +3,7 @@ package user
 import (
 	"company/finance/config"
 	"company/finance/db"
-	"company/finance/internal"
+	model "company/finance/internal"
 	"errors"
 	"log"
 	"time"
@@ -15,7 +15,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-func Add(user internal.User) error {
+func Add(user model.User) error {
 
 	_, err := db.Insert("user", user)
 	if err != nil {
@@ -29,7 +29,7 @@ func Add(user internal.User) error {
 // CreateToken Create JWT Token
 func CreateToken(id, email string) (string, error) {
 
-	claims := internal.Token{
+	claims := model.Token{
 		ID:    id,
 		Email: email,
 		StandardClaims: jwt.StandardClaims{
@@ -76,21 +76,21 @@ func CheckToken(c echo.Context) (string, jwt.MapClaims, error) {
 }
 
 // LoadUserByEmail Load User by Email
-func LoadUserByEmail(email string) (internal.User, error) {
+func LoadUserByEmail(email string) (model.User, error) {
 
 	filter := bson.M{"email": email}
 
 	u, err := db.Find("user", filter, nil)
 	if err != nil {
-		return internal.User{}, errors.New("User not Found")
+		return model.User{}, errors.New("User not Found")
 	}
 	if u == nil {
-		return internal.User{}, errors.New("User not Found")
+		return model.User{}, errors.New("User not Found")
 	}
 
 	users, err := convertToStruct(u)
 	if users == nil {
-		return internal.User{}, errors.New("User not Found")
+		return model.User{}, errors.New("User not Found")
 	}
 
 	return users[0], nil
@@ -98,17 +98,17 @@ func LoadUserByEmail(email string) (internal.User, error) {
 }
 
 // convertToStruct Convert Mongo Curser to User Struct
-func convertToStruct(cur *mongo.Cursor) (internal.Users, error) {
+func convertToStruct(cur *mongo.Cursor) (model.Users, error) {
 
-	var users internal.Users
+	var users model.Users
 
 	for cur.Next(nil) {
 
-		var user internal.User
+		var user model.User
 
 		err := cur.Decode(&user)
 		if err != nil {
-			return internal.Users{}, err
+			return model.Users{}, err
 		}
 
 		users = append(users, user)
@@ -118,7 +118,7 @@ func convertToStruct(cur *mongo.Cursor) (internal.Users, error) {
 }
 
 // Update Update User
-func Update(data internal.User, id string) error {
+func Update(data model.User, id string) error {
 
 	ObjectID, err := primitive.ObjectIDFromHex(id)
 	if err != nil {

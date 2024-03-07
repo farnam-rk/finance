@@ -1,14 +1,14 @@
 package account
 
 import (
-	"company/finance/internal"
+	model "company/finance/internal"
 	"company/finance/internal/user"
 	"errors"
 
 	"log"
 )
 
-func Add(account internal.Account, email string) error {
+func Add(account model.Account, email string) error {
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
@@ -33,12 +33,12 @@ func Add(account internal.Account, email string) error {
 	return nil
 }
 
-func History(email string) (internal.Accounts, error) {
+func History(email string) (model.Accounts, error) {
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
 		log.Println("Error in Loading User with Email :", email, ", Error :", err.Error())
-		return internal.Accounts{}, err
+		return model.Accounts{}, err
 	}
 
 	return u.Account, nil

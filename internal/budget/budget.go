@@ -1,14 +1,14 @@
 package budget
 
 import (
-	"company/finance/internal"
+	model "company/finance/internal"
 	"company/finance/internal/user"
 	"errors"
 
 	"log"
 )
 
-func Add(budget internal.Budget, email string) error {
+func Add(budget model.Budget, email string) error {
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
@@ -33,12 +33,12 @@ func Add(budget internal.Budget, email string) error {
 	return nil
 }
 
-func History(email string) (internal.Budgets, error) {
+func History(email string) (model.Budgets, error) {
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
 		log.Println("Error in Loading User with Email :", email, ", Error :", err.Error())
-		return internal.Budgets{}, err
+		return model.Budgets{}, err
 	}
 
 	return u.Budget, nil

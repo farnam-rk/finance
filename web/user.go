@@ -1,7 +1,7 @@
 package web
 
 import (
-	"company/finance/internal"
+	model "company/finance/internal"
 	"company/finance/internal/user"
 
 	"log"
@@ -13,7 +13,7 @@ import (
 
 func addUser(c echo.Context) error {
 
-	form := internal.User{}
+	form := model.User{}
 
 	if err := c.Bind(&form); err != nil {
 		log.Println("Error in Binding Input Form of addUser : ", err.Error())

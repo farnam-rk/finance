@@ -1,7 +1,7 @@
 package expense
 
 import (
-	"company/finance/internal"
+	model "company/finance/internal"
 	"company/finance/internal/user"
 	"errors"
 	"fmt"
@@ -9,7 +9,7 @@ import (
 	"log"
 )
 
-func Add(expense internal.Expense, email string) (string, error) {
+func Add(expense model.Expense, email string) (string, error) {
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
@@ -34,14 +34,14 @@ func Add(expense internal.Expense, email string) (string, error) {
 	return warning, nil
 }
 
-func History(email string, start, end int64) (internal.Expenses, error) {
+func History(email string, start, end int64) (model.Expenses, error) {
 
-	expenses := internal.Expenses{}
+	expenses := model.Expenses{}
 
 	u, err := user.LoadUserByEmail(email)
 	if err != nil {
 		log.Println("Error in Loading User with Email :", email, ", Error :", err.Error())
-		return internal.Expenses{}, err
+		return model.Expenses{}, err
 	}
 
 	for _, j := range u.Expense {
@@ -53,7 +53,7 @@ func History(email string, start, end int64) (internal.Expenses, error) {
 	return expenses, nil
 }
 
-func checkStatus(expense internal.Expense, u internal.User) (string, int, error) {
+func checkStatus(expense model.Expense, u model.User) (string, int, error) {
 
 	validBudget, err := budgetCheck(expense, u)
 	if err != nil {
@@ -74,7 +74,7 @@ func checkStatus(expense internal.Expense, u internal.User) (string, int, error)
 
 }
 
-func budgetCheck(expense internal.Expense, u internal.User) (int, error) {
+func budgetCheck(expense model.Expense, u model.User) (int, error) {
 
 	var (
 		validBudget      int
@@ -93,7 +93,7 @@ func budgetCheck(expense internal.Expense, u internal.User) (int, error) {
 	return validBudget, nil
 }
 
-func expenseCheck(expense internal.Expense, u internal.User, validBudget int) (string, error) {
+func expenseCheck(expense model.Expense, u model.User, validBudget int) (string, error) {
 
 	var (
 		spend   int
@@ -112,7 +112,7 @@ func expenseCheck(expense internal.Expense, u internal.User, validBudget int) (s
 	return warning, nil
 }
 
-func accountCheck(expense internal.Expense, u internal.User) (int, error) {
+func accountCheck(expense model.Expense, u model.User) (int, error) {
 
 	var (
 		validAccount     int
