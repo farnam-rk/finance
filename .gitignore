@@ -3,6 +3,8 @@
 
 *.gz
 
+*.log
+
 log/
 
 index.html
