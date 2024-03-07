@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "8891046c-ba2c-4617-8900-a36d609ad052",
+		"name": "finance",
+		"description": "Finance Service APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5070/api/adduser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\" :\"farnam\",\n\t\"lastname\" :\"rajabi\",\n\t\"email\":\"farnam@gmail.com\",\n\t\"password\":\"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/adduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"adduser"
+					]
+				},
+				"description": "Adding new user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"farnam@gmail.com\",\n\t\"password\":\"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "login with email and password and getting token for interaction with system"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/addaccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk3MzJhOTI0Nzg5ZWUzZDM3MjQ4OCIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3MzM4NX0.VjEjdgLx5X6ON7wg7uXhF2oRp2DDSw8YesoUk_2JNGU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"no\" :\"1\",\n\t\"name\" :\"sepah\",\n\t\"balance\":1000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/addaccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"addaccount"
+					]
+				},
+				"description": "adding new account for specified user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/addbudget",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk4YTdiMzE1ODNlY2Q1MTRiYjg0ZSIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3Njk2MX0.syFnoRncjBrgoiY8Dvk4HUETxYREZlrxGfMqFwLv_UY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" :\"kharid\",\n\t\"cap_amount\" :500\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/addbudget",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"addbudget"
+					]
+				},
+				"description": "adding new budget for specified user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/addexpense",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk3MzJhOTI0Nzg5ZWUzZDM3MjQ4OCIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3MzM4NX0.VjEjdgLx5X6ON7wg7uXhF2oRp2DDSw8YesoUk_2JNGU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" :\"lebas\",\n\t\"budget\" :\"kharid\",\n\t\"used_account\":\"sepah\",\n\t\"amount\":100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/addexpense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"addexpense"
+					]
+				},
+				"description": "adding new expense for specified user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/accounthistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk3MzJhOTI0Nzg5ZWUzZDM3MjQ4OCIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3MzM4NX0.VjEjdgLx5X6ON7wg7uXhF2oRp2DDSw8YesoUk_2JNGU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/accounthistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"accounthistory"
+					]
+				},
+				"description": "see account history for specified user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/budgethistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk3MzJhOTI0Nzg5ZWUzZDM3MjQ4OCIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3MzM4NX0.VjEjdgLx5X6ON7wg7uXhF2oRp2DDSw8YesoUk_2JNGU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/budgethistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"budgethistory"
+					]
+				},
+				"description": "see budget history for specified user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5070/api/expensehistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTk3MzJhOTI0Nzg5ZWUzZDM3MjQ4OCIsImVtYWlsIjoiZmFybmFtQGdtYWlsLmNvbSIsImV4cCI6MTcwOTk3MzM4NX0.VjEjdgLx5X6ON7wg7uXhF2oRp2DDSw8YesoUk_2JNGU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"start\" :0,\n\t\"end\" :1709804558\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5070/api/expensehistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5070",
+					"path": [
+						"api",
+						"expensehistory"
+					]
+				},
+				"description": "see expenses history for specified user in specified time range(unix time)"
+			},
+			"response": []
+		}
+	]
+}
