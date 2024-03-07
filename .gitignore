@@ -1,0 +1,13 @@
+
+*.exe
+
+*.gz
+
+log/
+
+index.html
+*.tar.xz
+*.zip
+*.csv
+*.sh
+*.xlsx

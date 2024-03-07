@@ -29,7 +29,6 @@ type Config struct {
 	DBDriver              string   `valid:"required"`
 	ListenerPort          string   `json:"ListenerPort"`
 	ConfigTimeExportDaily ConfTime `json:"ConfigTimeExportDaily"`
-	Cumulative            int      `json:"Cumulative"`
 	JWTSecret             string   `json:"JWTSecret"`
 }
 
@@ -57,7 +56,6 @@ var DefaultConfig = Config{
 	DBPort1:               27017,
 	DBPort2:               27017,
 	ConfigTimeExportDaily: DefaultConfigTime,
-	Cumulative:            0,
 	JWTSecret:             "wellcom to finance",
 }
 
