@@ -2,7 +2,6 @@ package db
 
 import (
 	"context"
-	"sort"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -66,60 +65,9 @@ func Delete(collection string, filter interface{}, deleteOne bool, option *optio
 	return result, nil
 }
 
-// Distinct Find Distinct of Filed
-func Distinct(Collection string, fieldName string, filter interface{}, option *options.DistinctOptions) ([]string, error) {
-
-	var distinctData []string
-
-	coll := DB.Collection(Collection)
-	cur, err := coll.Distinct(context.TODO(), fieldName, filter)
-	if err != nil {
-		return nil, err
-	}
-	for _, SingleData := range cur {
-		if SingleData != nil {
-			distinctData = append(distinctData, SingleData.(string))
-		}
-	}
-
-	sort.Strings(distinctData)
-
-	return distinctData, nil
-}
-
-// Count Get Count of Document in Collection
-func Count(collection string, filter interface{}, option *options.CountOptions) (int64, error) {
-	coll := DB.Collection(collection)
-
-	count, err := coll.CountDocuments(nil, filter, option)
-	return count, err
-}
-
-// GetAllCollectionsName Return All Collection Names
-func GetAllCollectionsName() ([]string, error) {
-	collName, err := DB.ListCollectionNames(context.TODO(), bson.D{})
-	if err != nil {
-		return nil, err
-	}
-
-	return collName, err
-}
-
-// Aggregate Aggregate by Pipeline
-func Aggregate(collectionName string, pipline interface{}, option *options.AggregateOptions) (*mongo.Cursor, error) {
-	coll := DB.Collection(collectionName)
-	cur, err := coll.Aggregate(nil, pipline, option)
-
-	if err != nil {
-		return nil, err
-	}
-	return cur, nil
-}
-
 func ParseBson(model interface{}) bson.M {
 	b, _ := bson.Marshal(model)
 	var body bson.M
 	bson.Unmarshal(b, &body)
 	return bson.M{"$set": body}
-	// return body
 }
