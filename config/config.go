@@ -20,12 +20,9 @@ func init() {
 type Config struct {
 	DBUsername            string
 	DBPassword            string
-	Replica               string
 	DBName                string `valid:"required"`
 	DBHost1               string `valid:"required"`
 	DBPort1               int
-	DBHost2               string `valid:"required"`
-	DBPort2               int
 	DBDriver              string   `valid:"required"`
 	ListenerPort          string   `json:"ListenerPort"`
 	ConfigTimeExportDaily ConfTime `json:"ConfigTimeExportDaily"`
@@ -48,13 +45,10 @@ var DefaultConfigTime = ConfTime{
 var DefaultConfig = Config{
 	DBUsername:            "",
 	DBPassword:            "",
-	Replica:               "",
 	DBName:                "finance",
 	DBHost1:               "127.0.0.1",
-	DBHost2:               "127.0.0.1",
 	DBDriver:              "mongodb",
 	DBPort1:               27017,
-	DBPort2:               27017,
 	ConfigTimeExportDaily: DefaultConfigTime,
 	JWTSecret:             "wellcom to finance",
 }

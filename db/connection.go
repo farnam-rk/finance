@@ -29,7 +29,6 @@ func Disconnect() {
 func DBconnection() {
 	log.Println("Conecting to DB")
 	dbData := fmt.Sprintf("%s://%s:%d", config.ConfigValue.DBDriver, config.ConfigValue.DBHost1, config.ConfigValue.DBPort1)
-	// dbData := fmt.Sprintf("%s://%s:%s@%s:%d,%s:%d/?replicaSet=%s", config.ConfigValue.DBDriver, config.ConfigValue.DBUsername, config.ConfigValue.DBPassword, config.ConfigValue.DBHost1, config.ConfigValue.DBPort1, config.ConfigValue.DBHost2, config.ConfigValue.DBPort2, config.ConfigValue.Replica)
 	clientOption := options.Client().ApplyURI(dbData)
 
 	client, err := mongo.Connect(context.TODO(), clientOption)
